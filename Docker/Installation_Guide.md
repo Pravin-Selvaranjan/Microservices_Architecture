@@ -1,5 +1,7 @@
 # How to install Docker
 
+![architecture](https://user-images.githubusercontent.com/110179866/189690669-866ee9fa-2896-4d23-8868-bae6cbdae761.svg)
+
 - Install Docker here [Docker](https://docs.docker.com/desktop/install/windows-install/)
 - Ensure to follow troubleshooting tips and be on the correct version of Windows 10/11
 - You will be prompted to restart your machine multiple times in order to get Docker up and running
