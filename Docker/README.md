@@ -29,3 +29,30 @@ You create a container image and then deploy a container in a matter of seconds.
 ## Virtualisation vs Containerisation
 
 - Containers and virtual machines are very similar resource virtualisation technologies. Virtualisation is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualised’ and represented as multiple resources. The key differentiator between containers and virtual machines is that virtual machines virtualise an entire machine down to the hardware layers and containers only virtualise software layers above the operating system level.
+
+
+## Interview Answers
+
+What is Docker? 
+- Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
+
+What is Containerisation?
+- Essentially, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. When you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together.
+
+
+Who uses it?
+
+- Containers allow applications to be more rapidly deployed, patched, or scaled. Containers support agile and DevOps efforts to accelerate development, test, and production cycles. A large number of the Cloud and IT industry use containerisation. 
+
+Benefits of Containerisation and Docker?
+
+- Fast
+- Can run anywhere
+- Highly Scalable
+- Can run multiple containers on same server 
+
+
+Virtualisation vs Containerisation 
+
+- Containers provide an isolated environment for running applications. The entire used space can be dedicated to a single application, Compared to VMs, hypervisors provide you with an entire VM to the guest (including the kernel). Virtual machines are essentially an abstraction of the hardware layer and each VM is a physical machine.
+
