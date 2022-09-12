@@ -34,7 +34,7 @@ You create a container image and then deploy a container in a matter of seconds.
 ## Interview Answers
 
 What is Docker? 
-- Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
+- Docker is a containerisation platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment, be it development, test or production. It wraps basically anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment.
 
 What is Containerisation?
 - Essentially, an application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a container. When you wish to run the application on another system, the container is deployed which will give a bug-free environment as all the dependencies and libraries are wrapped together.
