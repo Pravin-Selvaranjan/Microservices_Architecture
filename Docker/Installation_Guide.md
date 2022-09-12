@@ -57,3 +57,5 @@
 
 Link to further commands and explanations [Docker Commands](https://www.edureka.co/blog/docker-commands/)
 
+Link to extensive documentation on how to use Docker [Docker cheat](https://stackify.com/docker-tutorial/)
+
