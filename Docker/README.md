@@ -1,5 +1,9 @@
 # Docker
 
+![1-TableI-1](https://user-images.githubusercontent.com/110179866/189629503-f1f2f543-89bd-4eae-9eb3-5b61e00b563f.png)
+
+
+
 ## What is Docker?
 
 - Docker is an open source platform for building, deploying, and managing containerized applications. Learn about containers, how they compare to VMs, and why Docker is so widely adopted and used.
@@ -9,6 +13,9 @@
 - Containerisation is a type of virtualisation in which all the components of an application are bundled into a single container image and can be run in isolated user space on the same shared operating system. Containers are lightweight, portable, and highly conducive to automation.
 
 ## Who uses it?
+
+![1_mbBvqN1x3uFwfpxC1SB2YA](https://user-images.githubusercontent.com/110179866/189629567-9549942d-c4a8-4bc3-86dd-0769c9a605a7.png)
+
 
 - Computer software covers the maximum, i.e. 40%, followed by IT services, i.e. 17%. While Staffing and Recruiting industry is 10%. This is followed by Internet (7%), Healthcare (6%), Financial Services (6%), Computer Hardware (5%), Retail (4%), Consulting (3%), and Telecommunications (2%).
 
