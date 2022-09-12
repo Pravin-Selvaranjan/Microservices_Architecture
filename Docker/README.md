@@ -6,7 +6,7 @@
 
 ## What is Docker?
 
-- Docker is an open source platform for building, deploying, and managing containerized applications. Learn about containers, how they compare to VMs, and why Docker is so widely adopted and used.
+- Docker is an open source platform for building, deploying, and managing containerized applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.
 
 ## What is Containerisation?
 
@@ -28,4 +28,4 @@ You create a container image and then deploy a container in a matter of seconds.
 
 ## Virtualisation vs Containerisation
 
-- Containers and virtual machines are very similar resource virtualization technologies. Virtualization is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualized’ and represented as multiple resources. The key differentiator between containers and virtual machines is that virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.
+- Containers and virtual machines are very similar resource virtualisation technologies. Virtualisation is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualised’ and represented as multiple resources. The key differentiator between containers and virtual machines is that virtual machines virtualise an entire machine down to the hardware layers and containers only virtualise software layers above the operating system level.
