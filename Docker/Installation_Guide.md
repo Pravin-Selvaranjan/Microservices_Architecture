@@ -80,6 +80,11 @@ Link to extensive documentation on how to use Docker [Docker cheat](https://stac
  ```
 
 
+
+# Creating a Dockerfile
+
+- Create file named `Dockerfile` in same location where `index.html` is 
+
 ```
 
 # Select base image
