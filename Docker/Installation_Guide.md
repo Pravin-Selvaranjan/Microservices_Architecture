@@ -62,3 +62,46 @@ Link to extensive documentation on how to use Docker [Docker cheat](https://stac
 
 ![dockercheatsheet8](https://user-images.githubusercontent.com/110179866/189697839-55e2de8e-a8fd-4729-8faf-dbda4a4ae722.png)
 
+
+# Replacing index.html in Nginx
+
+- 1- move file from localhost to container
+- 2- delete the existing file
+- 3- send file.html from localhost to container
+- 4- copy data from a - b
+
+## Example of copying
+```
+ docker cp ./some_file CONTAINER:/work 
+ 
+ 
+ # Copy local files to container
+
+ ```
+
+
+```
+
+# Select base image
+
+FROM nginx     # which image do you want to use
+
+# label it
+
+LABEL MAINTAINER=pravin     # naming 
+
+# copy data from localhost to the container
+COPY index.html /usr/share/nginx/html/    # copy the data from our lh to the folder  within the image
+
+# allow required port
+
+EXPOSE 80                # port required for exposure 
+
+# execute required command
+
+CMD ["nginx", "-g", "daemon off;"]      # command given to us by dockerhub to use 
+
+```
+- run `docker build -t pselvaranjan/nginx_host_pravin .` the "." denotes dockerfiles contained within this location
+- run `docker run -d -p 80:80 pselvaranjan/nginx_host_pravin`
+- Your html page should now be live 
