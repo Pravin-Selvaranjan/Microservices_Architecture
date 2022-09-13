@@ -110,3 +110,83 @@ CMD ["nginx", "-g", "daemon off;"]      # command given to us by dockerhub to us
 - run `docker build -t pselvaranjan/nginx_host_pravin .` the "." denotes dockerfiles contained within this location
 - run `docker run -d -p 80:80 pselvaranjan/nginx_host_pravin`
 - Your html page should now be live 
+
+
+### Building a Docker image for our node app
+
+- create a micro-service for node-app
+- create a Dockerfile inside the app folder
+- create a script to package our node app in an image
+- create a container of our image
+- should load it on port 3000 or port 80
+- push it to docker hub
+
+
+# Mongo Dockerfile 
+
+```
+FROM mongo
+
+COPY mongod.conf.orig /etc/
+
+RUN apt update
+RUN apt install sudo
+RUN apt install nano
+
+EXPOSE 27017
+
+```
+
+# App Dockerfile
+
+```
+
+# base image
+FROM node
+
+# label
+LABEL MAINTAINER=Pravin
+
+# inside the container what would be the default working directory
+WORKDIR /usr/src/app
+
+# copy dependencies
+COPY package*.json ./
+COPY . .
+
+# run some commands such as npm install
+RUN apt update
+RUN npm install -g npm@7.20.6
+
+# expose port 3000
+EXPOSE 3000
+
+# cmd ["node", "app.js"] (move Dockerfile to app folder)
+CMD ["node","app.js"]
+```
+
+# Docker-Compose
+
+```
+
+version: '3'
+
+services:
+  db:
+    build: .\Mongo
+    restart: always
+    ports: [27017:27017]
+    volumes:
+      - './Mongo:/usr/src/app'
+
+  app:
+    build: .\Node-app\Deployment\app
+    restart: always
+    ports: [3000:3000]
+    environment:
+      - DB_HOST=mongodb://db:27017/posts
+    depends_on:
+      - db
+    links:
+      - db
+```

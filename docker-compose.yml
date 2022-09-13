@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  db:
+    build: .\Mongo
+    restart: always
+    ports: [27017:27017]
+    volumes:
+      - './Mongo:/usr/src/app'
+
+  app:
+    build: .\Node-app\Deployment\app
+    restart: always
+    ports: [3000:3000]
+    environment:
+      - DB_HOST=mongodb://db:27017/posts
+    depends_on:
+      - db
+    links:
+      - db
